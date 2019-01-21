@@ -16,9 +16,6 @@
     "primeicons": "^1.0.0",
     "primereact": "^3.0.0-rc.1"
   },
-  "devDependencies": {
-    "babel-loader": "^8.0.5"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
