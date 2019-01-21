@@ -1,8 +1,9 @@
-﻿using System;
+﻿using ProductService.BusinessLayer.Entities.Products;
+using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace ProductService.BusinessLayer.Entities
+namespace ProductService.BusinessLayer.Entities.ProductStocks
 {
 	public class ProductStock : Entity
 	{
