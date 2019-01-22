@@ -21,7 +21,7 @@ namespace ProductService.DataLayer
 		/// </summary>
 		/// <param name="entity"></param>
 		/// <returns></returns>
-		public async Task<T> Add(T entity)
+		public virtual async Task<T> Add(T entity)
 		{
 			if (!entity.IsValid())
 				throw new ArgumentException(string.Format("Instance of {0} is not valid", typeof(T)));
@@ -37,7 +37,7 @@ namespace ProductService.DataLayer
 		/// </summary>
 		/// <param name="entity"></param>
 		/// <returns></returns>
-		public async Task<bool> Delete(T entity)
+		public virtual async Task<bool> Delete(T entity)
 		{
 			if (entity == null)
 				throw new ArgumentNullException(nameof(entity));
@@ -53,7 +53,7 @@ namespace ProductService.DataLayer
 		/// A generic function to obtain all records from a certain type from the database.
 		/// </summary>
 		/// <returns></returns>
-		public async Task<IList<T>> GetAll()
+		public virtual async Task<IList<T>> GetAll()
 		{
 			return await context.Set<T>()
 						.ToAsyncEnumerable()
@@ -65,7 +65,7 @@ namespace ProductService.DataLayer
 		/// </summary>
 		/// <param name="entity"></param>
 		/// <returns></returns>
-		public async Task<T> Update(T entity)
+		public virtual async Task<T> Update(T entity)
 		{
 			if (!entity.IsValid())
 				throw new ArgumentException(string.Format("Instance of {0} is not valid", typeof(T)));
