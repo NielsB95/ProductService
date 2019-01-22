@@ -45,7 +45,7 @@ namespace ProductService.DataLayer
 		{
 			// Add the database context as a singleton.
 			services.AddDbContext<ProductServiceContext>(options =>
-				options.UseNpgsql(configuration.GetConnectionString("ConnectionString")), ServiceLifetime.Scoped);
+				options.UseNpgsql(configuration.GetConnectionString("ProductDB")), ServiceLifetime.Scoped);
 
 			return services;
 		}
