@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using ProductService.DataLayer;
 
@@ -24,10 +23,17 @@ namespace ProductService
 				app.UseDeveloperExceptionPage();
 			}
 
-			app.Run(async (context) =>
+			app.UseCors(builder =>
 			{
-				await context.Response.WriteAsync("Hello World!");
+				builder.AllowAnyOrigin()
+					   .AllowAnyHeader()
+					   .AllowAnyMethod();
 			});
+
+			// Add an endpoint for health checking.
+			app.UseHealthChecks("/health");
+
+			app.UseMvc();
 		}
 	}
 }
