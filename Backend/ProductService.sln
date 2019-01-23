@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductService.BusinessLaye
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductService.DataLayer", "ProductService.DataLayer\ProductService.DataLayer.csproj", "{70724100-FB36-4090-A4B1-A807522EADAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductService.Api", "ProductService.API\ProductService.Api.csproj", "{1B08F067-12C2-4E0C-AF6B-781A81E26FFD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductService.Api", "ProductService.Api\ProductService.Api.csproj", "{1B08F067-12C2-4E0C-AF6B-781A81E26FFD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductService.GraphQL", "ProductService.GraphQL\ProductService.GraphQL.csproj", "{4EFC729D-543C-4A17-87A4-4ED8E8FB34B5}"
 EndProject
