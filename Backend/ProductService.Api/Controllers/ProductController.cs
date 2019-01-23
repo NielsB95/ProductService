@@ -9,7 +9,7 @@ namespace ProductService.API.Controllers
 	[Produces("application/json")]
 	public class ApplicationController : ControllerBase
 	{
-		private IProductRepository productRepository;
+		private readonly IProductRepository productRepository;
 
 		public ApplicationController(IProductRepository productRepository)
 		{

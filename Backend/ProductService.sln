@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductService.DataLayer", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductService.Api", "ProductService.API\ProductService.Api.csproj", "{1B08F067-12C2-4E0C-AF6B-781A81E26FFD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProductService.GraphQL", "ProductService.GraphQL\ProductService.GraphQL.csproj", "{4EFC729D-543C-4A17-87A4-4ED8E8FB34B5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{1B08F067-12C2-4E0C-AF6B-781A81E26FFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B08F067-12C2-4E0C-AF6B-781A81E26FFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B08F067-12C2-4E0C-AF6B-781A81E26FFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EFC729D-543C-4A17-87A4-4ED8E8FB34B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EFC729D-543C-4A17-87A4-4ED8E8FB34B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EFC729D-543C-4A17-87A4-4ED8E8FB34B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EFC729D-543C-4A17-87A4-4ED8E8FB34B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
