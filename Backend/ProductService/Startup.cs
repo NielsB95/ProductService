@@ -23,17 +23,8 @@ namespace ProductService
 				app.UseDeveloperExceptionPage();
 			}
 
-			//app.UseCors(builder =>
-			//{
-			//	builder.AllowAnyOrigin()
-			//		   .AllowAnyHeader()
-			//		   .AllowAnyMethod();
-			//});
-
 			// Add an endpoint for health checking.
 			app.UseHealthChecks("/health");
-
-			//app.UseMvc();
 		}
 	}
 }
