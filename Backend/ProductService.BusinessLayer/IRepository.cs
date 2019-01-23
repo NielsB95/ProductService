@@ -6,7 +6,7 @@ namespace ProductService.BusinessLayer
 	public interface IRepository
 	{ }
 
-	public interface IRepository<T> where T : Entity
+	public interface IRepository<T> : IRepository where T : Entity
 	{
 		Task<IList<T>> GetAll();
 		Task<T> Add(T entity);
