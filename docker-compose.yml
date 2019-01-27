@@ -18,6 +18,6 @@ services:
     volumes:
       - /Docker/ProductDB:/var/lib/postgresql/data
     environment:
-        POSTGRES_PASSWORD: pass
         POSTGRES_USER: user
+        POSTGRES_PASSWORD: pass
         POSTGRES_DB: ProductDB
