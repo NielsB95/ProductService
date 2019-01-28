@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import 'semantic-ui-css/semantic.min.css';
 
 import { ProductContext } from './Containers/DataContext/ProductContext';
-import { Routing } from './Pages/Routing';
+import { Routing } from './Routing';
 
 class App extends Component<{}, { error?: string, products: any[] }> {
 

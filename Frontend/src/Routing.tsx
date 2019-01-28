@@ -1,9 +1,9 @@
 import React from 'react';
 import { Switch, Route } from 'react-router';
 import { BrowserRouter } from 'react-router-dom';
-import { Index } from './Index';
-import { Contact } from './Contact';
-import { Products } from './Products';
+import { Index } from './Pages/Index';
+import { Contact } from './Pages/Contact';
+import { Products } from './Pages/Products';
 
 export class Routing extends React.Component {
 
