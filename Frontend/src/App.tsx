@@ -11,24 +11,24 @@ import { Column } from 'primereact/column';
 
 class App extends Component<{}, { error?: string, products: any[] }> {
 
-  render() {
+	render() {
 
-    return (
-      <ProductContext>
-        <ProductContainer>
-          {({ loading, products }) => {
-            if (loading) return "Loading ...";
-            return (
-              <DataTable value={products} >
-                <Column field='name' header='Product omschrijving' />
-                <Column field='category.name' header='Categorie' />
-              </DataTable>
-            )
-          }}
-        </ProductContainer>
-      </ProductContext>
-    );
-  }
+		return (
+			<ProductContext>
+				<ProductContainer>
+					{({ loading, products }) => {
+						if (loading) return "Loading ...";
+						return (
+							<DataTable value={products} >
+								<Column field='name' header='Product omschrijving' />
+								<Column field='category.name' header='Categorie' />
+							</DataTable>
+						)
+					}}
+				</ProductContainer>
+			</ProductContext>
+		);
+	}
 }
 
 export default App;

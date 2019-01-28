@@ -2,13 +2,12 @@ import React from 'react';
 
 interface IProductContextState {
 
-    // The properties within the state of this application.
-    state: {
-    },
+	// The properties within the state of this application.
+	state: {
+	},
 
-    // Enlist possible functions we want to apply on the state.
+	// Enlist possible functions we want to apply on the state.
 }
-
 
 const context = React.createContext({});
 
@@ -16,20 +15,20 @@ const context = React.createContext({});
 export const ProductConsumer = context.Consumer;
 
 /**
- * Extension for the context provider so we can put some more logic to it. 
+ * Extension for the context provider so we can put some more logic to it.
  */
 export class ProductContext extends React.Component<{}, IProductContextState> {
 
-    state: IProductContextState = {
-        state: {
-        }
-    };
+	state: IProductContextState = {
+		state: {
+		}
+	};
 
-    render() {
-        return (
-            <context.Provider value={this.state.state}>
-                {this.props.children}
-            </context.Provider>
-        );
-    }
+	render() {
+		return (
+			<context.Provider value={this.state.state}>
+				{this.props.children}
+			</context.Provider>
+		);
+	}
 }
