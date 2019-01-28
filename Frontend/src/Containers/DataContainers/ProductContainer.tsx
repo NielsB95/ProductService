@@ -1,5 +1,6 @@
 import React, { ReactNode } from 'react';
 import { ILoading } from '../UtilContainers/LoadingContainer';
+import { IProduct } from './../DataDefinitions/Product';
 
 export interface IRenderProp<IState> {
 	children: (data: IState) => ReactNode
@@ -7,7 +8,7 @@ export interface IRenderProp<IState> {
 
 export interface IProductContainerState extends ILoading {
 	error?: string,
-	products: any[]
+	products: IProduct[]
 }
 
 export class ProductContainer extends React.Component<IRenderProp<IProductContainerState>, IProductContainerState> {

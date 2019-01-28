@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 
+// Import the required css files for styling.
 import 'primereact/resources/themes/nova-light/theme.css';
 import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
-import { ProductContainer } from './DataContainers/ProductContainer';
-import { ProductContext } from './DataContext/ProductContext';
 
-import { DataTable } from 'primereact/datatable';
-import { Column } from 'primereact/column';
+import { ProductContext } from './Containers/DataContext/ProductContext';
+import { Routing } from './Pages/Routing';
 
 class App extends Component<{}, { error?: string, products: any[] }> {
 
@@ -15,17 +14,7 @@ class App extends Component<{}, { error?: string, products: any[] }> {
 
 		return (
 			<ProductContext>
-				<ProductContainer>
-					{({ loading, products }) => {
-						if (loading) return "Loading ...";
-						return (
-							<DataTable value={products} >
-								<Column field='name' header='Product omschrijving' />
-								<Column field='category.name' header='Categorie' />
-							</DataTable>
-						)
-					}}
-				</ProductContainer>
+				<Routing />
 			</ProductContext>
 		);
 	}
