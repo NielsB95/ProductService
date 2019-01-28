@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import { ILoading } from '../UtilContainers/LoadingContainer';
 
-export interface IRenderProps<IState> {
+export interface IRenderProp<IState> {
     children: (data: IState) => ReactNode
 }
 
@@ -10,7 +10,7 @@ export interface IProductContainerState extends ILoading {
     products: any[]
 }
 
-export class ProductContainer extends React.Component<IRenderProps<IProductContainerState>, IProductContainerState> {
+export class ProductContainer extends React.Component<IRenderProp<IProductContainerState>, IProductContainerState> {
 
     // Initilaize the state
     state: IProductContainerState = {
