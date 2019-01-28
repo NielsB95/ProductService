@@ -12,7 +12,8 @@ class App extends Component<{}, { error?: string, products: any[] }> {
 
     return (
       <ProductContainer>
-        {({ products }) => {
+        {({ loading, products }) => {
+          if (loading) return "";
           return <h1>{products.toLocaleString()}</h1>
         }}
       </ProductContainer>

@@ -30,13 +30,16 @@ export class ProductContainer extends React.Component<IRenderProps<IProductConta
                 if (reponse.status == 200)
                     return reponse.json();
                 else
-                    this.setState({ error: reponse.statusText, loading: false });
+                    this.setState({ error: reponse.statusText });
             }).then(data => {
-                this.setState({ products: data, loading: false });
+                this.setState({ products: data });
             })
             .catch(x =>
-                this.setState({ error: "Something went wrong", loading: false }
-                ));
+                this.setState({ error: "Something went wrong" }
+                ))
+            .finally(() => {
+                this.setState({ loading: false });
+            });
     }
 
     public render() {
