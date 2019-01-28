@@ -11,13 +11,11 @@ class App extends Component<{}, { error?: string, products: any[] }> {
   render() {
 
     return (
-      <LoadingContainer>
-        <ProductContainer>
-          {({ products }) => {
-            return <h1>{products.toLocaleString()}</h1>
-          }}
-        </ProductContainer>
-      </LoadingContainer>
+      <ProductContainer>
+        {({ products }) => {
+          return <h1>{products.toLocaleString()}</h1>
+        }}
+      </ProductContainer>
     );
   }
 }
