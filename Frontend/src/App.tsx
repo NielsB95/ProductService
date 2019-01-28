@@ -18,7 +18,6 @@ class App extends Component<{}, { error?: string, products: any[] }> {
         <ProductContainer>
           {({ loading, products }) => {
             if (loading) return "Loading ...";
-            console.log(products);
             return (
               <DataTable value={products} >
                 <Column field='name' header='Product omschrijving' />
