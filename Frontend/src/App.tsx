@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 
-// Import the required css files for styling.
-import 'primereact/resources/themes/nova-light/theme.css';
-import 'primereact/resources/primereact.min.css';
-import 'primeicons/primeicons.css';
+// Import styling
+import 'semantic-ui-css/semantic.min.css';
 
 import { ProductContext } from './Containers/DataContext/ProductContext';
 import { Routing } from './Pages/Routing';

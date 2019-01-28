@@ -1,9 +1,17 @@
 import React from 'react';
+import { Button } from 'semantic-ui-react';
+
 
 export class Index extends React.Component {
 	render() {
 		return (
-			<h1>Hello index</h1>
+			<React.Fragment>
+
+				<Button primary>Primary</Button>
+
+
+
+			</React.Fragment>
 		);
 	}
 }
